@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task-10</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="myParagraph">This is a paragraph.</p>
+
+  <script>
+    const button = document.getElementById('myButton');
+    const paragraph = document.getElementById('myParagraph');
+
+    button.addEventListener('click', toggleHighlightClass);
+
+    function toggleHighlightClass() {
+      paragraph.classList.toggle('highlight');
+    }
+  </script>
+</body>
+</html>

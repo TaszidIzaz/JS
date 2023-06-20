@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Task - 15 </title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    ajaxPostRequest();
+    async function ajaxPostRequest() {
+      try {
+        let demo = {
+          name: "John Doe",
+          email: "johndoe@example.com"
+        };
+
+        let response = await axios.post("https://api.example.com/submit", demo);
+        console.log("Response", response);
+      } catch (error) {
+        console.error("Error", error);
+      }
+    }
+  </script>
+</body>
+</html>

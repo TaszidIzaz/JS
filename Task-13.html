@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tas - 13</title>  
+</head>
+<body>
+  <p class="change" id='1'>This paragraph has the change class.</p>
+  <p id='2' class="noChange" >This paragraph does not have the change class.</p>
+  <p class="change" id='3'>This paragraph has the change class.</p>
+  <p id='4' class="noChange" >This paragraph does not have the change class.</p>
+
+  <script>
+    const paragraphs = document.querySelectorAll('.change');
+    paragraphs.forEach(paragraph => {
+      paragraph.style.color = 'red';
+    });
+  </script>
+</body>
+</html>

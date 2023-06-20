@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 7 Assignment 3</title>
+</head>
+<body>
+  <img id="myImage" src="1.png" alt="Image">
+
+  <script>
+ 
+    document.addEventListener('click', event => {
+      const x = event.clientX;
+      const y = event.clientY;
+      alert(`Clicked at (${x}, ${y})`);
+    });
+
+   
+    document.addEventListener('keydown', event => {
+      const keyCode = event.keyCode || event.which;
+      alert(`Key code: ${keyCode}`);
+    });
+
+    
+    const image = document.getElementById('myImage');
+    image.addEventListener('mouseover', () => {
+      image.src = '2.png';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task - 12 </title>
+</head>
+<body>
+  <img id="myImage" src="1.png" alt="1">
+  <button id="changeImageButton">Change Image</button>
+
+  <script>
+    const image = document.getElementById('myImage');
+    const changeButton = document.getElementById('changeImageButton');
+
+    changeButton.addEventListener('click', changeImage);
+
+    function changeImage() {
+      image.src = '2.png';
+      image.alt = '2';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task - 11 </title>
+</head>
+<body>
+  <ul id="myList"></ul>
+
+  <script>
+    const myList = document.getElementById('myList');
+    
+    function createList() {
+      for (let i = 1; i <= 5; i++) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Item ${i}`;
+        myList.appendChild(listItem);
+      }
+    }
+
+    createList();
+  </script>
+</body>
+</html>

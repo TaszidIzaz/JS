@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Task - 14 </title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    ajaxGetRequest();
+    async function ajaxGetRequest() {
+      let response = await axios.get("https://api.example.com/data");
+      console.log("Response" ,response );
+    }
+  </script>
+</body>
+</html>
